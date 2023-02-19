@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css';
+@import 'https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Roboto:ital,wght@1,100&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Henny Penny';
+@import "https://fonts.googleapis.com/css?family=Pattaya";
+@import 'https://fonts.googleapis.com/css2?family=Mynerve&display=swap';
+
+.navbar {
+  width: 100%;
+  position: fixed!important;
+  top: 0;
+  z-index: 1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-item {
+  color: white;
+  font-family: "Mynerve";
+}
+
+.nav-link:hover {
+  color:rgb(42, 159, 182)!important;
+}
+
+h1,h4 {
+  font-family:Calibri;
+}
+
+h3 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-family: "Henny Penny";
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+thead {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.img_max_height {
+  width: 100%;
+  max-height: 550px;
+  -o-object-fit: cover;
+   object-fit: cover;
+}
+
+@media only screen and (max-width: 540px) {
+  .display-carousel {
+    display: none!important;
+  }
+  .display-images {
+    display: block!important;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .display-carousel {
+    display: block!important;
+  }
+  .display-images {
+    display: none!important;
+  }
+}
+
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+
+.card-img-top {
+  max-height: 350px;
+}
+
+.p-about {
+  font-size:18px;
+  font-family: "David";
+}
+
+.p-user-profile {
+  font-size: 18px;
+  font-family: "Mynerve";
+}
+
+.video {
+  width: 19rem;
+}
+
+@media (min-width: 450px) and (max-width: 540px) {
+  .video {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .img_max_height {
+    max-height: 300px;
+  }
+  .video {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img_max_height {
+    max-height: 350px;
+  }
+  .video {
+    width: 13rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .video {
+    width: 17rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1350px) {
+  .video {
+    width: 23rem;
+  }
+}
+
+.fa-regular, .fa-brands {
+  font-size: 30px;
+  color:rgb(42, 159, 182);
+}
+
+.fa-regular:hover, .fa-brands:hover{
+  color: white;
+  transform: scale(1.5);
 }
